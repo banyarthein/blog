@@ -21,6 +21,10 @@ app.post('/events', (request, response) => {
 
 });
 
+app.get("/events", (request, response) => {
+    response.send(events);
+});
+
 app.listen(4005, () => {
     console.log('Event Bus is Listening on 4005');
 });
