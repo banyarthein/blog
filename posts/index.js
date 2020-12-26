@@ -37,7 +37,7 @@ app.post('/posts/', async (request, response) => {
         title
     };
 
-    await Axios.post('http://localhost:4005/events', {
+    await Axios.post('http://event-bus-service:4005/events', {
         type: 'PostCreated',
         data: {
             id,
