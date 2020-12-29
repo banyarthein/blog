@@ -32,7 +32,7 @@ app.post('/posts/:id/comments', async (request, response) => {
 
     console.log("Post object", request.post);
 
-    await Axios.post('http://localhost:4005/events', {
+    await Axios.post('http://event-bus-service:4005/events', {
         type: 'CommentCreated',
         data: {
             id: commentId,
