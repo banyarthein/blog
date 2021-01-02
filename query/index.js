@@ -36,6 +36,7 @@ const handleEvent = (type, data) => {
 }
 
 app.get('/posts', (request, response) => {
+    console.log("Reading from Query Service");
     response.send(posts);
 });
 
