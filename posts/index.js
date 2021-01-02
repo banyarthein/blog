@@ -47,7 +47,7 @@ app.post('/posts/create', async (request, response) => {
 
 
     response.status(201).send(posts[id]);
-    console.log('Post has created.');
+    console.log('New Post has created.');
 });
 
 

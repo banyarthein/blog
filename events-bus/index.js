@@ -26,5 +26,5 @@ app.get("/events", (request, response) => {
 });
 
 app.listen(4005, () => {
-    console.log('Event Bus is Listening on 4005');
+    console.log('Event Bus is Listening on 4005. (k)');
 });
